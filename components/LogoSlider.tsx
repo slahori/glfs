@@ -20,7 +20,7 @@ const LogoSlider: React.FC = () => {
       <div className="container mx-auto px-4 text-center mb-16">
         
         <h3 className="text-blue-900 font-black text-3xl md:text-4xl mb-3 tracking-tight">
-          We're <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-500">fully independent</span>
+          We're <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-500">independent</span>
         </h3>
         <p className="text-gray-400 font-medium max-w-xl mx-auto">
           We work with over <span className="text-gray-900 font-bold underline decoration-blue-500 underline-offset-4">130+ lenders</span> to find you the most competitive rates.
