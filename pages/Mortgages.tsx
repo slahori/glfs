@@ -143,19 +143,28 @@ const Mortgages: React.FC = () => {
       </section>
 
       {/* CTA Footer */}
-      <section className="pb-24">
-        <div className="container mx-auto px-4">
-          <div className="bg-blue-900 rounded-[3rem] p-12 md:p-20 text-center text-white relative overflow-hidden">
+      
+      <section className="pb-12 md:pb-24 px-4">
+        <div className="container mx-auto">
+          <div className="bg-blue-900 rounded-[2rem] md:rounded-[3rem] p-8 md:p-20 text-center text-white relative overflow-hidden">
             <div className="relative z-10">
-              <h2 className="text-4xl font-bold mb-6">Ready to get started?</h2>
-              <p className="text-blue-100 mb-10 text-xl max-w-2xl mx-auto opacity-90">
+              <h2 className="text-2xl md:text-4xl font-bold mb-4 md:mb-6">
+                Ready to get started?
+              </h2>
+              <p className="text-blue-100 mb-8 md:mb-10 text-base md:text-xl max-w-2xl mx-auto opacity-90 leading-relaxed">
                 Our team of experts is ready to help you navigate the complex market with whole-of-market access and tailored financial solutions.
               </p>
-              <Link to="/contact" className="bg-white text-blue-900 px-12 py-5 rounded-full font-bold text-lg hover:bg-blue-50 transition-all shadow-2xl">
+              
+              {/* Responsive Button Fix */}
+              <Link 
+                to="/contact" 
+                className="inline-block bg-white text-blue-900 px-6 py-4 md:px-12 md:py-5 rounded-full font-bold text-sm md:text-lg hover:bg-blue-50 transition-all shadow-2xl active:scale-95"
+              >
                 Book Your Free Consultation
               </Link>
             </div>
-            <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+            
+            <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none hidden md:block">
                 <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
                     <path d="M0 100 C 20 0 50 0 100 100 Z" fill="white"></path>
                 </svg>
