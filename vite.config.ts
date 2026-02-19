@@ -19,7 +19,7 @@ export default defineConfig(({ mode }) => {
       host: true,
       port: Number(process.env.PORT) || 5173,
       strictPort: false,
-      allowedHosts: ['glfs.onrender.com']
+      allowedHosts: ['glfs-p1ks.onrender.com']
     },
 
     resolve: {
