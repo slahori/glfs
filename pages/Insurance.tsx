@@ -66,7 +66,7 @@ const Insurance: React.FC = () => {
               <div className="absolute -bottom-10 -left-10 w-40 h-40 lg:w-80 lg:h-80 bg-blue-50 rounded-full filter blur-3xl opacity-60"></div>
               <div className="relative z-10 rounded-[2rem] lg:rounded-[3.5rem] overflow-hidden shadow-2xl border-[6px] lg:border-[12px] border-white transform lg:-rotate-2">
                 <img 
-                  src="https://images.squarespace-cdn.com/content/v1/597610d6d2b85704bb5e4f8a/ad9a2d70-407e-4483-93b4-608e0a721a51/ST5.jpg?format=1000w" 
+                  src="https://media.istockphoto.com/id/1130953778/photo/young-happy-family-relax-together-at-home-smiling-and-hugging.jpg?s=612x612&w=0&k=20&c=AXZf8M0hrfg8XuFDSW_fsC3ExfIdVt5ORnSInat7wYg=" 
                   alt="Family Security" 
                   className="w-full h-[300px] lg:h-[500px] object-cover"
                 />
