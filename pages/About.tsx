@@ -4,35 +4,47 @@ import { Link } from 'react-router-dom';
 const About: React.FC = () => {
   return (
     <div className="bg-white min-h-screen">
-      {/* 1. Founder & Mission Section */}
+      {/* 1. Founder & Mission Section - Passport Wrap Layout */}
       <section className="relative pt-16 pb-12 lg:pt-24 lg:pb-20 overflow-hidden">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
-            <div className="w-full lg:w-5/12 animate-slide-in-left">
-              <div className="relative group">
-                <div className="absolute -inset-4 bg-blue-50 rounded-[3rem] -rotate-2 group-hover:rotate-0 transition-transform duration-500"></div>
-                <div className="relative z-10 rounded-[2.5rem] overflow-hidden shadow-2xl border-8 border-white">
-                  <img 
-                    src="/logos/selfpic.JPG" 
-                    alt="Sandeep Lahori - Founder & Director" 
-                    className="w-full h-[500px] object-cover"
-                  />
-                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-blue-900/90 to-transparent p-8 pt-20">
-                    <h2 className="text-white text-2xl font-black">Sandeep Lahori</h2>
-                    <p className="text-blue-300 font-bold uppercase tracking-widest text-sm mb-2">Founder & Director</p>
-                    
-                  </div>
+        <div className="container mx-auto px-4 max-w-5xl">
+          <div className="animate-slide-in-left">
+            
+            {/* PHOTO: Floated to the left with passport dimensions */}
+            <div className="float-left w-[140px] sm:w-[180px] mr-6 mb-4 relative group">
+              <div className="absolute -inset-2 bg-blue-50 rounded-2xl -rotate-2 group-hover:rotate-0 transition-transform duration-500"></div>
+              <div className="relative z-10 rounded-xl overflow-hidden shadow-lg border-4 border-white">
+                <img 
+                  src="/logos/selfpic.JPG" 
+                  alt="Sandeep Lahori - Founder & Director" 
+                  className="w-full h-[180px] sm:h-[230px] object-cover"
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-blue-900/90 to-transparent p-2 pt-6 text-center">
+                  <h2 className="text-white text-sm font-black leading-tight">Sandeep Lahori</h2>
+                  <p className="text-blue-300 font-bold uppercase tracking-tighter text-[10px]">Founder & Director</p>
                 </div>
               </div>
             </div>
 
-            <div className="w-full lg:w-7/12 text-center lg:text-left">
-              
-              <h1 className="text-4xl md:text-5xl lg:text-3xl font-black text-blue-900 mb-8 leading-tight italic">
-                "Our mission is to provide independent, unbiased mortgage and insurance advice that puts clients first—helping individuals and families secure their homes, protect their futures, and make confident financial decisions."
-              </h1>
-             
+            {/* QUOTE: Sits next to the image */}
+            <h1 className="text-xl md:text-2xl font-black text-blue-900 mb-4 leading-tight italic">
+              "Our mission is to provide independent, unbiased mortgage and insurance advice that puts clients first—helping individuals and families secure their homes, protect their futures, and make confident financial decisions."
+            </h1>
+
+            {/* WRAPPING TEXT: Flows around the image and under the quote */}
+            <div className="text-gray-600 text-base leading-relaxed">
+              <p className="mb-4">
+                At Greater London Financial Services, we believe that professional financial advice should be accessible, transparent, and centered entirely around you. Since our founding, we have been committed to breaking down the complexities of the mortgage market, ensuring that every client—from first-time buyers to seasoned property investors—feels empowered and informed throughout their journey.
+              </p>
+              <p className="mb-4">
+                Our independence is our greatest strength. Unlike bank-tied advisers, we have the freedom to scan the entire market to find the specific products that align with your long-term goals. We don't just look for the lowest rates; we look for the right fit for your unique life circumstances. 
+              </p>
+              <p>
+                We take pride in the relationships we build. To us, you aren't just a case number; you are a partner. We provide end-to-end support, handling the heavy lifting and the "jargon" so you can focus on the excitement of securing your home or protecting your family's future.
+              </p>
             </div>
+            
+            {/* Clearfix to ensure the float doesn't mess up the next section */}
+            <div className="clear-both"></div>
           </div>
         </div>
       </section>
@@ -161,10 +173,10 @@ const About: React.FC = () => {
         </div>
       </section>
 
-      {/* 6. The Advice Journey - Flowchart (80vh constraint) */}
+      {/* 6. The Advice Journey - Flowchart */}
       <section className="pb-24">
         <div className="container mx-auto px-4 text-center">
-          <div className="max-w-5xl mx-auto  p-6 lg:p-12    h-[80vh] flex flex-col items-center justify-center">
+          <div className="max-w-5xl mx-auto p-6 lg:p-12 h-[80vh] flex flex-col items-center justify-center">
             <h2 className="text-5xl lg:text-3xl font-extrabold italic text-blue-900 mb-6 flex-shrink-0">
               Supporting you, throughout the process!
               <br />
@@ -174,10 +186,9 @@ const About: React.FC = () => {
                <img 
                 src="/logos/flowchart.png" 
                 alt="The Advice Journey Flowchart" 
-                className="max-w-full max-h-full object-contain rounded-2xl "
+                className="max-w-full max-h-full object-contain rounded-2xl"
               />
             </div>
-           
           </div>
         </div>
       </section>
