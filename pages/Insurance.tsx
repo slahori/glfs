@@ -49,7 +49,7 @@ const Insurance: React.FC = () => {
           <div className="flex flex-col lg:flex-row items-center gap-8">
             <div className="w-full lg:w-1/2 z-10 lg:pl-16 text-center lg:text-left animate-slide-in-left">
               <h1 className="text-3xl md:text-5xl lg:text-7xl font-black text-slate-900 mb-6 leading-tight">
-                <span className="text-blue-600 italic font-medium block mt-2">Protect what matters the most.</span>
+                <span className="text-blue-600 italic font-medium block mt-2">Protect what matters the most...</span>
               </h1>
               <p className="text-base md:text-xl text-slate-500 mb-6 lg:mb-10 max-w-lg mx-auto lg:mx-0 leading-relaxed">
                 Life can be unpredictable — but your finances don’t have to be. We’ll help you protect your home, your income, and your loved ones.
